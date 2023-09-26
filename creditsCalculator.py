@@ -1,8 +1,3 @@
-# I declare that my work contains no examples of misconduct, such as plagiarism, or collusion.
-# Any code taken from other sources is referenced within my code solution.
-# Student ID: W19474591 
-# Date: 18/11/2022
-
 # -----Part 1 - Main Version-----
 
 # A - Outcomes
@@ -48,9 +43,6 @@ def outcome(passCredits, deferCredits, failCredits):
     print("Exclude")
     excludeList.append([passCredits, deferCredits, failCredits])
 
-# Reference:
-# https://westminster.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=04181dcc-b079-4824-8774-af470063c474
-
 # B - Validation
 def get_credits(prompt):
   validCredits = [0, 20, 40, 60, 80, 100, 120]
@@ -68,10 +60,6 @@ print("-" * 12, "Progression Outcomes", "-" * 12)
 print("Part 1 - Main Version")
 print()
 
-# Reference:
-# https://pythonexamples.org/python-if-not/
-# https://www.w3schools.com/python/ref_string_isdigit.asp
-
 def validation():
   global passCredits, deferCredits, failCredits
   while True:
@@ -86,9 +74,6 @@ def validation():
   outcome(passCredits, deferCredits, failCredits)
   histogram(passCredits, deferCredits, failCredits)
   multiple()
-
-# Reference:
-# https://www.w3schools.com/python/python_variables_global.asp
 
 # D - Histogram
 progress = []
@@ -132,9 +117,6 @@ def displayHistogram():
     print("-" * 60)
     print("")
 
-# Reference:
-# https://www.programiz.com/python-programming/methods/built-in/len
-
 # C - Multiple Outcomes
 def multiple():
     global moreData
@@ -162,10 +144,6 @@ def multiple():
 validation()
 histogram(passCredits, deferCredits, failCredits)
 
-# Reference:
-# https://bobbyhadz.com/blog/python-input-validation-while-loop#:~:text=To%20validate%20input%20in%20a,break%20out%20of%20the%20loop.
-
-
 # -----Part 2 - List-----
 time.sleep(0.7)
 print("Part 2 - List:")
@@ -183,15 +161,9 @@ def list():
     print("Exclude -", str(i)[1:-1])
 list()
 
-# Reference:
-# apayangkamu.com/how-to-remove-square-brackets-from-nested-list-in-python
-
 # -----Part 3 - Text File-----
 time.sleep(0.7)
 print("\nPart 3 - Text File:")
 results = open('savedResults.txt', 'w')
 results.write(str(list()))
 results.close()
-
-# Reference:
-# https://westminster.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4613272e-2798-4cdc-8309-add7011205f2
